@@ -38,66 +38,150 @@
   <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
  <script src="/_sdk/telemetry_sdk.js"></script></head>
  <body data-template-id="__page-root" class="min-h-screen" style="background: linear-gradient(rgb(10, 22, 40), rgb(15, 35, 64));">
-  <header class="relative overflow-hidden"><img data-template-id="company-logo" class="canva-image absolute top-4 left-6 z-20 h-16 object-contain" loading="lazy" src="canva://MAHLXa9YvJ4/1" alt=""> <img data-template-id="hero-image" class="canva-image absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" src="https://images.pexels.com/photos/27538600/pexels-photo-27538600.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern blue glass skyscraper with a futuristic design in an urban environment">
+  <header class="relative overflow-hidden"><img data-template-id="company-logo" class="canva-image absolute top-4 left-6 z-20 h-16 object-contain" loading="lazy" src="canva://MAHLXa9YvJ4/1" alt=""hero-image" class="canva-image absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" src="https://images.pexels.com/photos/27538600/pexels-photo-27538600.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern blue glass skyscraper with a futuristic design in an urban environment">
    <div class="relative z-10 px-6 py-20 md:py-32 text-center max-w-4xl mx-auto">
-    <p data-template-id="company-name" class="canva-text font-bold mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">LISOTECH INNOVATIONS</p>
-     <marquee>LISOTECH INNOVATIONS is committed to delivering expert company registration and compliance services, driven by integrity and innovation. Our vision is to empower businesses with reliable corporate solutions and cutting-edge digital marketing support to foster their growth and success.</marquee>
+    <h1 data-template-id="company-name" class="canva-text font-bold mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">LISOTECH INNOVATIONS</h1>
+    <p data-template-id="tagline" class="canva-text text-xl md:text-2xl opacity-90" style="color: rgb(148, 184, 255); font-weight: 400; font-style: normal; font-size: 20px;">Your Trusted Partner for Business Registration &amp; Compliance Services in Zambia</p>
    </div>
   </header>
   <main class="max-w-6xl mx-auto px-6 py-16">
-   <section class="mb-16">
-    <h2 data-template-id="services-heading" class="canva-text font-bold text-center mb-10" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Our Services</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-     <div data-template-id="svc-1" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-1-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Limited Company Registration</p>
+   <!-- Main Services View -->
+   <div id="main-view">
+    <section class="mb-16">
+     <h2 data-template-id="services-heading" class="canva-text font-bold text-center mb-10" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Our Services</h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <button id="svc-1-btn" class="canva-card service-card rounded-lg p-4 text-left hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-400" style="border: none; background: inherit; cursor: pointer; width: 100%;">
+       <div data-template-id="svc-1" class="canva-card service-card rounded-lg p-4" style="margin: -16px; cursor: default; background: rgb(26, 45, 77);">
+        <p data-template-id="svc-1-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Limited Company Registration</p>
+       </div></button>
+      <div data-template-id="svc-2" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-2-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Business Registration</p>
+      </div>
+      <div data-template-id="svc-3" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-3-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Annual Returns</p>
+      </div>
+      <div data-template-id="svc-4" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-4-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZPPA Registration</p>
+      </div>
+      <div data-template-id="svc-5" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-5-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;"> ZPPA Renewal</p>
+      </div>
+      <div data-template-id="svc-6" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-6-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NAPSA Registration</p>
+      </div>
+      <div data-template-id="svc-7" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-7-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NAPSA Returns</p>
+      </div>
+      <div data-template-id="svc-8" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-8-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZRA Registration</p>
+      </div>
+      <div data-template-id="svc-9" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-9-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZRA Returns (TOT/Pay As You Earn)</p>
+      </div>
+      <div data-template-id="svc-10" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-10-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Worker's Compensation Registration</p>
+      </div>
+      <div data-template-id="svc-11" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-11-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Worker's Compensation Renewal</p>
+      </div>
+      <div data-template-id="svc-12" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-12-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NHIMA Registration</p>
+      </div>
+      <div data-template-id="svc-13" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-13-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NHIMA Returns</p>
+      </div>
+      <div data-template-id="svc-14" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-14-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Company Email Setup</p>
+      </div>
+      <div data-template-id="svc-15" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-15-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Company Profile Design</p>
+      </div>
+      <div data-template-id="svc-16" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
+       <p data-template-id="svc-16-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Business Website Development</p>
+      </div>
      </div>
-     <div data-template-id="svc-2" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-2-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Business Registration</p>
-     </div>
-     <div data-template-id="svc-3" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-3-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">PACRA Annual Returns</p>
-     </div>
-     <div data-template-id="svc-4" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-4-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZPPA Registration</p>
-     </div>
-     <div data-template-id="svc-5" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-5-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;"> ZPPA Renewal</p>
-     </div>
-     <div data-template-id="svc-6" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-6-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NAPSA Registration</p>
-     </div>
-     <div data-template-id="svc-7" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-7-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NAPSA Returns</p>
-     </div>
-     <div data-template-id="svc-8" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-8-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZRA Registration</p>
-     </div>
-     <div data-template-id="svc-9" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-9-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">ZRA Returns (TOT/Pay As You Earn)</p>
-     </div>
-     <div data-template-id="svc-10" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-10-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Worker's Compensation Registration</p>
-     </div>
-     <div data-template-id="svc-11" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-11-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Worker's Compensation Renewal</p>
-     </div>
-     <div data-template-id="svc-12" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-12-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NHIMA Registration</p>
-     </div>
-     <div data-template-id="svc-13" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-13-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">NHIMA Returns</p>
-     </div>
-     <div data-template-id="svc-14" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-14-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Company Email Setup</p>
-     </div>
-     <div data-template-id="svc-15" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-15-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Company Profile Design</p>
-     </div>
-     <div data-template-id="svc-16" class="canva-card service-card rounded-lg p-4" style="background: rgb(26, 45, 77);">
-      <p data-template-id="svc-16-text" class="canva-text font-medium" style="color: rgb(226, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Business Website Development</p>
-     </div>
+    </section>
+   </div><!-- PACRA Limited Company Registration Detail View -->
+   <div id="pacra-detail-view" class="hidden">
+    <button id="back-btn" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
+    <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 mb-8 text-white">
+     <h2 data-template-id="pacra-title" class="canva-text font-bold text-3xl mb-2" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 28px;">PACRA Limited Company Registration</h2>
+     <p data-template-id="pacra-price" class="canva-text text-xl font-semibold" style="color: rgb(251, 191, 36); font-weight: 700; font-style: normal; font-size: 16px;">Fee: K3,500</p>
     </div>
-   </section>
+    <div class="space-y-8">
+     <section>
+      <h3 data-template-id="pacra-business-req-heading" class="canva-text font-bold text-2xl mb-4 text-blue-300" style="color: rgb(96, 165, 250); font-weight: 700; font-style: normal; font-size: 24px;">Requirements</h3>
+      <div class="space-y-4">
+       <div class="bg-blue-900 rounded-lg p-4">
+        <h4 data-template-id="pacra-business-req-1-title" class="canva-text font-bold text-lg mb-2 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Name Clearance</h4>
+        <p data-template-id="pacra-business-req-1-desc" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">You suggest three names then after approved.</p>
+       </div>
+       <div class="bg-blue-900 rounded-lg p-4">
+        <h4 data-template-id="pacra-business-req-2-title" class="canva-text font-bold text-lg mb-4 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Directors Details</h4>
+        <p data-template-id="pacra-business-req-2-notice" class="canva-text text-blue-100 mb-3 font-semibold" style="color: rgb(251, 191, 36); font-weight: 400; font-style: normal; font-size: 16px;">Minimum of two with the following info:</p>
+        <ul class="space-y-2 list-disc list-inside">
+         <li data-template-id="pacra-business-req-2-item1" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Full Names of Director</li>
+         <li data-template-id="pacra-business-req-2-item2" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Email addresses</li>
+         <li data-template-id="pacra-business-req-2-item3" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Contact Numbers</li>
+         <li data-template-id="pacra-business-req-2-item4" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">NRC Numbers</li>
+         <li data-template-id="pacra-business-req-2-item5" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Date of Birth</li>
+         <li data-template-id="pacra-business-req-2-item6" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Residential address</li>
+         <li data-template-id="pacra-business-req-2-item7" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Name of a Road nearby</li>
+         <li data-template-id="pacra-business-req-2-item8" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">The date which the business will start operating</li>
+         <li data-template-id="pacra-business-req-2-item9" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Financial year end</li>
+         <li data-template-id="pacra-business-req-2-item10" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Front and Back Copies of NRC</li>
+        </ul>
+       </div>
+      </div>
+     </section>
+     <section>
+      <h3 data-template-id="pacra-business-process-heading" class="canva-text font-bold text-2xl mb-4 text-blue-300" style="color: rgb(134, 239, 172); font-weight: 700; font-style: normal; font-size: 24px;">Upon Completion</h3>
+      <div class="bg-green-900 rounded-lg p-6 border-l-4 border-green-400">
+       <p data-template-id="pacra-business-process-desc" class="canva-text text-lg text-green-100" style="color: rgb(220, 252, 231); font-weight: 400; font-style: normal; font-size: 16px;">The PACRA Certificate is given immediately.</p>
+      </div>
+     </section>
+    </div>
+   </div><!-- PACRA Business Registration Detail View -->
+   <div id="pacra-business-detail-view" class="hidden">
+    <button id="back-btn-business" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
+    <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 mb-8 text-white">
+     <h2 data-template-id="pacra-business-title" class="canva-text font-bold text-3xl mb-2" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 28px;">PACRA Business Registration</h2>
+     <p data-template-id="pacra-business-price" class="canva-text text-xl font-semibold" style="color: rgb(251, 191, 36); font-weight: 700; font-style: normal; font-size: 16px;">Fee: K1,200</p>
+    </div>
+    <div class="space-y-8">
+     <section>
+      <h3 data-template-id="pacra-req-heading" class="canva-text font-bold text-2xl mb-4 text-blue-300" style="color: rgb(96, 165, 250); font-weight: 700; font-style: normal; font-size: 24px;">Requirements</h3>
+      <div class="space-y-4">
+       <div class="bg-blue-900 rounded-lg p-4">
+        <h4 data-template-id="pacra-req-1-title" class="canva-text font-bold text-lg mb-2 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Name Clearance</h4>
+        <p data-template-id="pacra-req-1-desc" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">You suggest three names which will be approved by PACRA.</p>
+       </div>
+       <div class="bg-blue-900 rounded-lg p-4">
+        <h4 data-template-id="pacra-req-2-title" class="canva-text font-bold text-lg mb-4 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Directors Details (Minimum of Two)</h4>
+        <p data-template-id="pacra-req-2-notice" class="canva-text text-blue-100 mb-3 font-semibold" style="color: rgb(251, 191, 36); font-weight: 400; font-style: normal; font-size: 16px;">Each director must provide:</p>
+        <ul class="space-y-2 list-disc list-inside">
+         <li data-template-id="pacra-req-2-item1" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Full Names</li>
+         <li data-template-id="pacra-req-2-item2" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Email addresses</li>
+         <li data-template-id="pacra-req-2-item3" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Contact Numbers</li>
+         <li data-template-id="pacra-req-2-item4" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">NRC Numbers</li>
+         <li data-template-id="pacra-req-2-item5" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Date of Birth</li>
+         <li data-template-id="pacra-req-2-item6" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Residential Address</li>
+         <li data-template-id="pacra-req-2-item7" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Name of a Road Nearby</li>
+         <li data-template-id="pacra-req-2-item8" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Date the Business Will Start Operating</li>
+         <li data-template-id="pacra-req-2-item9" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Financial Year End</li>
+         <li data-template-id="pacra-req-2-item10" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Front and Back Copies of NRC</li>
+        </ul>
+       </div>
+      </div>
+     </section>
+     <section>
+      <h3 data-template-id="pacra-process-heading" class="canva-text font-bold text-2xl mb-4 text-blue-300" style="color: rgb(134, 239, 172); font-weight: 700; font-style: normal; font-size: 24px;">Upon Completion</h3>
+      <div class="bg-green-900 rounded-lg p-6 border-l-4 border-green-400">
+       <p data-template-id="pacra-process-desc" class="canva-text text-lg text-green-100" style="color: rgb(220, 252, 231); font-weight: 400; font-style: normal; font-size: 16px;">The PACRA Certificate and ZRA T-PIN Number Certificate are issued immediately upon completion of the registration process.</p>
+      </div>
+     </section>
+    </div>
+   </div>
    <section class="mb-16">
     <h2 data-template-id="payment-heading" class="canva-text font-bold text-center mb-6" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Accepted Payment Methods</h2>
     <div class="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
@@ -137,7 +221,7 @@
    <section>
     <h2 data-template-id="contact-heading" class="canva-text font-bold text-center mb-6" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Contact Us</h2>
     <div class="flex flex-col items-center gap-3 mb-10">
-     <p data-template-id="email" class="canva-text" style="color: rgb(200, 217, 255); font-weight: 400; font-style: normal; font-size: 16px;">For enquiry, kindly reach out</p>
+     <p data-template-id="email" class="canva-text" style="color: rgb(200, 217, 255); font-weight: 400; font-style: normal; font-size: 16px;">For enquiry, kindly reach out using the buttons below</p>
     </div>
     <div class="flex flex-wrap justify-center gap-4 mb-10"><a href="tel:+260974101130" data-template-id="call-button" class="canva-button flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-transform hover:scale-105" style="background: rgb(37, 99, 235); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Call Now</a> <a href="https://wa.me/260974101130?text=Hello%20Lisotech%20Innovations" target="_blank" rel="noopener noreferrer" data-template-id="whatsapp-button" class="canva-button flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-transform hover:scale-105" style="background: rgb(37, 211, 102); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">WhatsApp</a> <a href="mailto:lisotech@yahoo.com" data-template-id="email-button" class="canva-button flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-transform hover:scale-105" style="background: rgb(234, 67, 53); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Email</a>
     </div>
@@ -146,11 +230,51 @@
   <div id="floating-whatsapp-btn" class="floating-whatsapp"></div>
   <footer class="text-center py-8 opacity-60">
    <p data-template-id="footer-text" class="canva-text text-sm" style="color: rgb(122, 154, 212); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Lisotech Innovations. All rights reserved.</p>
-    <marquee>Designed @LISOTECH. Call or WhatsApp +260974101130</marquee>
   </footer>
   <script src="/_sdk/editing_sdk.js"></script>
   <script>
         lucide.createIcons();
+        
+        // Navigation between main and detail views
+        const mainView = document.getElementById('main-view');
+        const pacraDetailView = document.getElementById('pacra-detail-view');
+        const svc1Btn = document.getElementById('svc-1-btn');
+        const backBtn = document.getElementById('back-btn');
+
+        svc1Btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          mainView.classList.add('hidden');
+          pacraDetailView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+
+        backBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          pacraDetailView.classList.add('hidden');
+          mainView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+
+        // PACRA Business Registration detail view
+        const pacraBusinessDetailView = document.getElementById('pacra-business-detail-view');
+        const svc2Btn = document.querySelector('[data-template-id="svc-2"]');
+        const backBtnBusiness = document.getElementById('back-btn-business');
+
+        if (svc2Btn) {
+          svc2Btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mainView.classList.add('hidden');
+            pacraBusinessDetailView.classList.remove('hidden');
+            window.scrollTo(0, 0);
+          });
+        }
+
+        backBtnBusiness.addEventListener('click', (e) => {
+          e.preventDefault();
+          pacraBusinessDetailView.classList.add('hidden');
+          mainView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
         
         // Floating WhatsApp button with color cycling
         const floatingBtn = document.getElementById('floating-whatsapp-btn');
@@ -166,7 +290,7 @@
 
         updateButtonStyle();
 
-        // Cycle colors every 2 seconds
+        // Cycle colors every 5 seconds
         setInterval(() => {
           colorIndex = (colorIndex + 1) % colors.length;
           updateButtonStyle();
@@ -192,5 +316,5 @@
         });
 
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0550f2d7b68d120',t:'MTc4MDM4ODY0MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a05cf3856b5e33b1',t:'MTc4MDQ3MTM5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body></html>
