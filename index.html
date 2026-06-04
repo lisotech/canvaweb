@@ -38,7 +38,17 @@
   <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
  <script src="/_sdk/telemetry_sdk.js"></script></head>
  <body data-template-id="__page-root" class="min-h-screen" style="background: linear-gradient(rgb(10, 22, 40), rgb(15, 35, 64));">
-  <header class="relative overflow-hidden"><img data-template-id="company-logo" class="canva-image absolute top-4 left-6 z-20 h-16 object-contain" loading="lazy" src="canva://MAHLXa9YvJ4/1" alt=" "> <img data-template-id="hero-image" class="canva-image absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" src="https://images.pexels.com/photos/27538600/pexels-photo-27538600.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern blue glass skyscraper with a futuristic design in an urban environment">
+  <header class="relative overflow-hidden">
+   <img data-template-id="company-logo" class="canva-image absolute top-4 left-6 z-20 h-16 object-contain" loading="lazy" src="canva://MAHLXa9YvJ4/1" alt=""> <img data-template-id="hero-image" class="canva-image absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" src="https://images.pexels.com/photos/27538600/pexels-photo-27538600.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern blue glass skyscraper with a futuristic design in an urban environment"> <!-- Hamburger Menu Button --> <button id="menu-btn" class="absolute top-4 right-6 z-30 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Toggle menu"> <i data-lucide="menu" class="w-6 h-6 text-white"></i> </button> <!-- Mobile Navigation Panel -->
+   <nav id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-blue-950 z-20 transform translate-x-full transition-transform duration-300 shadow-lg overflow-y-auto">
+    <div class="p-6">
+     <button id="close-menu-btn" class="mb-6 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="x" class="w-6 h-6 text-white"></i> </button>
+     <div class="space-y-4">
+      <a href="#about" data-template-id="nav-about" class="canva-text block px-4 py-3 rounded-lg transition-colors font-medium" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">About</a> <a href="#services" data-template-id="nav-services" class="canva-text block px-4 py-3 rounded-lg transition-colors font-medium" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Services</a> <a href="#contact" data-template-id="nav-contact" class="canva-text block px-4 py-3 rounded-lg transition-colors font-medium" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Contact</a> <a href="#faq" data-template-id="nav-faq" class="canva-text block px-4 py-3 rounded-lg transition-colors font-medium" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">FAQ</a>
+     </div>
+    </div>
+   </nav><!-- Menu Overlay -->
+   <div id="menu-overlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none z-10 transition-opacity duration-300"></div>
    <div class="relative z-10 px-6 py-20 md:py-32 text-center max-w-4xl mx-auto">
     <h1 data-template-id="company-name" class="canva-text font-bold mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">LISOTECH INNOVATIONS</h1>
     <p data-template-id="tagline" class="canva-text text-xl md:text-2xl opacity-90" style="color: rgb(148, 184, 255); font-weight: 400; font-style: normal; font-size: 20px;">Your Trusted Partner for Business Registration &amp; Compliance Services in Zambia</p>
@@ -101,6 +111,24 @@
       </div>
      </div>
     </section>
+   </div><!-- About Section View -->
+   <div id="about-detail-view" class="hidden">
+    <button id="back-btn-about" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
+    <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 mb-8 text-white">
+     <h2 data-template-id="about-mission-title" class="canva-text font-bold text-3xl mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Explore LISOTECH INNOVATIONS Mission and Vision for Sustainable Growth</h2>
+     <p data-template-id="about-mission-desc" class="canva-text text-lg text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">LISOTECH INNOVATIONS is committed to delivering expert company registration and compliance services, driven by integrity and innovation. Our vision is to empower businesses with reliable corporate solutions and cutting-edge digital marketing support to foster their growth and success</p>
+    </div>
+   </div><!-- Contact Section Detail View -->
+   <div id="contact-detail-view" class="hidden">
+    <button id="back-btn-contact" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
+    <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 mb-8 text-white">
+     <h2 data-template-id="contact-detail-title" class="canva-text font-bold text-3xl mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 28px;">Get in Touch</h2>
+     <p data-template-id="contact-detail-desc" class="canva-text text-lg text-blue-100 mb-6" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Reach out to LISOTECH INNOVATIONS through our contact details for prompt assistance with registration and marketing services.</p>
+     <div class="space-y-3">
+      <p data-template-id="contact-detail-phone" class="canva-text text-lg font-semibold text-yellow-300" style="color: rgb(251, 191, 36); font-weight: 700; font-style: normal; font-size: 20px;">+260974101130</p>
+      <p data-template-id="contact-detail-email" class="canva-text text-lg font-semibold text-yellow-300" style="color: rgb(251, 191, 36); font-weight: 700; font-style: normal; font-size: 20px;">lisotech@yahoo.com</p>
+     </div>
+    </div>
    </div><!-- PACRA Limited Company Registration Detail View -->
    <div id="pacra-detail-view" class="hidden">
     <button id="back-btn" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
@@ -157,7 +185,7 @@
         <p data-template-id="pacra-req-1-desc" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">You suggest three names which will be approved by PACRA.</p>
        </div>
        <div class="bg-blue-900 rounded-lg p-4">
-        <h4 data-template-id="pacra-req-2-title" class="canva-text font-bold text-lg mb-4 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Directors Details (Minimum of Two)</h4>
+        <h4 data-template-id="pacra-req-2-title" class="canva-text font-bold text-lg mb-4 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Directors Details</h4>
         <p data-template-id="pacra-req-2-notice" class="canva-text text-blue-100 mb-3 font-semibold" style="color: rgb(251, 191, 36); font-weight: 400; font-style: normal; font-size: 16px;">Each director must provide:</p>
         <ul class="space-y-2 list-disc list-inside">
          <li data-template-id="pacra-req-2-item1" class="canva-text text-blue-100" style="color: rgb(224, 231, 255); font-weight: 400; font-style: normal; font-size: 16px;">Full Names</li>
@@ -180,6 +208,35 @@
        <p data-template-id="pacra-process-desc" class="canva-text text-lg text-green-100" style="color: rgb(220, 252, 231); font-weight: 400; font-style: normal; font-size: 16px;">The PACRA Certificate and ZRA T-PIN Number Certificate are issued immediately upon completion of the registration process.</p>
       </div>
      </section>
+    </div>
+   </div><!-- FAQ Section Detail View --> <!-- FAQ Section Detail View -->
+   <div id="faq-detail-view" class="hidden">
+    <button id="back-btn-faq" class="mb-6 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"> <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back</span> </button>
+    <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 mb-8 text-white">
+     <h2 data-template-id="faq-title" class="canva-text font-bold text-3xl mb-4" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 28px;">What services does LISOTECH INNOVATIONS offer?</h2>
+     <p data-template-id="faq-description" class="canva-text text-lg text-blue-100" style="color: rgb(219, 234, 255); font-weight: 700; font-style: normal; font-size: 13px;">Find clear and concise answers to the most frequent inquiries about our company registration, compliance, and digital marketing solutions</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="bg-blue-900 rounded-lg p-6">
+      <h3 data-template-id="faq-q1-title" class="canva-text font-bold text-xl mb-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">How can I register my company with PACRA through LISOTECH?</h3>
+      <p data-template-id="faq-q1-answer" class="canva-text text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">We guide you through the PACRA registration process, ensuring all documents are correctly submitted for swift approval.</p>
+     </div>
+     <div class="bg-blue-900 rounded-lg p-6">
+      <h3 data-template-id="faq-q2-title" class="canva-text font-bold text-xl mb-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">What support does LISOTECH provide for NAPSA and ZRA filings?</h3>
+      <p data-template-id="faq-q2-answer" class="canva-text text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Our team assists with NAPSA registrations, renewals, and ZRA compliance including Tax Identification Number (T-PIN) registration and returns filing.</p>
+     </div>
+     <div class="bg-blue-900 rounded-lg p-6">
+      <h3 data-template-id="faq-q3-title" class="canva-text font-bold text-xl mb-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Can LISOTECH help set up a professional company email?</h3>
+      <p data-template-id="faq-q3-answer" class="canva-text text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Yes, we provide professional company email setup services to establish your brand communication and enhance business credibility.</p>
+     </div>
+     <div class="bg-blue-900 rounded-lg p-6">
+      <h3 data-template-id="faq-q4-title" class="canva-text font-bold text-xl mb-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Does LISOTECH assist with website creation?</h3>
+      <p data-template-id="faq-q4-answer" class="canva-text text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">Absolutely. We develop professional business websites to help you establish a strong online presence and reach more clients.</p>
+     </div>
+     <div class="bg-blue-900 rounded-lg p-6">
+      <h3 data-template-id="faq-q5-title" class="canva-text font-bold text-xl mb-3 text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">What types of company compliance services are available?</h3>
+      <p data-template-id="faq-q5-answer" class="canva-text text-blue-100" style="color: rgb(219, 234, 255); font-weight: 400; font-style: normal; font-size: 16px;">We offer comprehensive compliance services including annual returns, NHIMA registration, Worker's Compensation, and ZPPA registration and renewals.</p>
+     </div>
     </div>
    </div>
    <section class="mb-16">
@@ -230,16 +287,57 @@
   <div id="floating-whatsapp-btn" class="floating-whatsapp"></div>
   <footer class="text-center py-8 opacity-60">
    <p data-template-id="footer-text" class="canva-text text-sm" style="color: rgb(122, 154, 212); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Lisotech Innovations. All rights reserved.</p>
+    <marquee>Designed @LISOTECH. Call or WhatsApp +260974101130</marquee>
   </footer>
   <script src="/_sdk/editing_sdk.js"></script>
   <script>
         lucide.createIcons();
         
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const navLinks = mobileMenu.querySelectorAll('a');
+
+        function openMenu() {
+          mobileMenu.classList.remove('translate-x-full');
+          menuOverlay.classList.remove('pointer-events-none');
+          menuOverlay.classList.add('opacity-50');
+        }
+
+        function closeMenu() {
+          mobileMenu.classList.add('translate-x-full');
+          menuOverlay.classList.add('pointer-events-none');
+          menuOverlay.classList.remove('opacity-50');
+        }
+
+        menuBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', closeMenu);
+        });
+        
+        // Services link scroll to services section
+        const navServicesLink = document.querySelector('a[href="#services"]');
+        navServicesLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeMenu();
+          const servicesSection = document.querySelector('[data-template-id="services-heading"]').closest('section');
+          servicesSection.scrollIntoView({ behavior: 'smooth' });
+        });
+        
         // Navigation between main and detail views
         const mainView = document.getElementById('main-view');
         const pacraDetailView = document.getElementById('pacra-detail-view');
+        const aboutDetailView = document.getElementById('about-detail-view');
         const svc1Btn = document.getElementById('svc-1-btn');
         const backBtn = document.getElementById('back-btn');
+        const backBtnAbout = document.getElementById('back-btn-about');
+        const navAboutLink = document.querySelector('a[href="#about"]');
 
         svc1Btn.addEventListener('click', (e) => {
           e.preventDefault();
@@ -272,6 +370,62 @@
         backBtnBusiness.addEventListener('click', (e) => {
           e.preventDefault();
           pacraBusinessDetailView.classList.add('hidden');
+          mainView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+        
+        // About section navigation
+        navAboutLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          mainView.classList.add('hidden');
+          aboutDetailView.classList.remove('hidden');
+          closeMenu();
+          window.scrollTo(0, 0);
+        });
+
+        backBtnAbout.addEventListener('click', (e) => {
+          e.preventDefault();
+          aboutDetailView.classList.add('hidden');
+          mainView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+        
+        // Contact section detail view
+        const contactDetailView = document.getElementById('contact-detail-view');
+        const navContactLink = document.querySelector('a[href="#contact"]');
+        const backBtnContact = document.getElementById('back-btn-contact');
+
+        navContactLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          mainView.classList.add('hidden');
+          contactDetailView.classList.remove('hidden');
+          closeMenu();
+          window.scrollTo(0, 0);
+        });
+
+        backBtnContact.addEventListener('click', (e) => {
+          e.preventDefault();
+          contactDetailView.classList.add('hidden');
+          mainView.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        });
+        
+        // FAQ section navigation
+        const faqDetailView = document.getElementById('faq-detail-view');
+        const navFaqLink = document.querySelector('a[href="#faq"]');
+        const backBtnFaq = document.getElementById('back-btn-faq');
+
+        navFaqLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          mainView.classList.add('hidden');
+          faqDetailView.classList.remove('hidden');
+          closeMenu();
+          window.scrollTo(0, 0);
+        });
+
+        backBtnFaq.addEventListener('click', (e) => {
+          e.preventDefault();
+          faqDetailView.classList.add('hidden');
           mainView.classList.remove('hidden');
           window.scrollTo(0, 0);
         });
@@ -316,5 +470,5 @@
         });
 
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a05cf3856b5e33b1',t:'MTc4MDQ3MTM5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0676656ebc02c77',t:'MTc4MDU4MDk1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body></html>
